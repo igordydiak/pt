@@ -11,44 +11,40 @@ body{
     max-width: 980px;
     margin: auto;
 }
-
-header nav .logo{
-    display: flex;
-    justify-content: center;
-    margin: 10px;
+.logo img{
+    width: 60%;
 }
-header nav .logo img {
-    width: 150px;
-    }
-header nav .menu {
+li{
+    list-style: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+header{
+    padding: 22px 0;
+}
+.header-container{
     display: flex;
     justify-content: space-around;
-    padding: 0;
-    list-style: none;
-    text-align: center;
+    align-items: center;
 }
-header nav .menu a{
-    text-decoration: none;
-    text-transform: uppercase;
+.header-container a{
     color: var(--main-color);
-    font-size: 120%;
-    border: 1px solid transparent;
-    padding: 5px;
-       }
-header nav .menu a:hover {
-    border: 1px solid var(--accent-color);
-    background-color: var(--accent-color);
+    font-size: 20px;
+    margin-right: 60px;
+    padding: 25px 6px;
+}
+.header-container a:hover {
+    background: var(--accent-color);
     color: white;
-       }
-@media( min-width:550px ){
-    header nav{
-        display: flex;
-        align-items: center;
-    }
-    header nav .menu {
-        flex: 1;
-    }
 
+}
+#menu-checkbox{
+    display: none;
+}
+ul{
+    display: flex;
 }
 header .banner {
     background-image:url(../img/border.png);

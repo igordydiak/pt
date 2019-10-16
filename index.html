@@ -9,21 +9,28 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 <body>
     <header>
-         <nav>
-           <div class="logo">
+    <div class="header-container">
+      <div class="logo">
            <img src="img/site-logo.png" alt="site logo">
            </div>
-           <ul class="menu">
+           <input type="checkbox" id="menu-checkbox">
+         <nav role="navigation">
+         <label for="menu-checkbox" class="toggle-button"
+         data-open="Menu"data-close="Close" onclick ></label>
+           <ul class="main-menu" >
             <li><a href="index.html">Головна</a></li>
             <li><a href="#prog">Програми</a></li>
             <li><a href="#contact">Контакти</a></li>
             <li><a href="#cart">Кошик</a></li>
            </ul>
           </nav>
-          <div class="banner">
+          <!--<div class="banner">
             <h1>Зміни себе  та свої звички за 60 днів</h1>
             <div class="button"><a href="#prog">Почати</a></div>
           </div>
+          /
+    </div>
+    -->
     </header>
 
     <section>
